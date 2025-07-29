@@ -1,0 +1,93 @@
+.list-product {
+  padding: 40px 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.list-product h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 100px 100px 50px;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  color: #444;
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: #ececec;
+  border-radius: 8px;
+}
+
+.listproduct-allproducts {
+  margin-top: 20px;
+}
+
+.listproduct-formate {
+  font-weight: normal;
+  background-color: white;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.listproduct-formate:hover {
+  transform: scale(1.01);
+  background-color: #fafafa;
+}
+
+.listproduct-product-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.listproduct-remove-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.listproduct-remove-icon:hover {
+  filter: brightness(0.8);
+}
+
+/* Divider style */
+.listproduct-allproducts hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .listproduct-format-main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .listproduct-remove-icon {
+    justify-self: end;
+  }
+
+  .listproduct-product-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .list-product {
+    padding: 20px;
+  }
+}
